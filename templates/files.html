@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!--- basic page needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <title>Annill Timothy</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <!-- mobile specific metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- CSS
+        ================================================== -->
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/vendor.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css')}}">
+    
+        <!-- favicons
+        ================================================== -->
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename = 'apple-touch-icon.png')}}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename = 'favicon-32x32.png')}}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename = 'favicon-16x16.png')}}">
+        <link rel="manifest" href="site.webmanifest">
+    
+    </head>
+{% if password == False %}
+<body id="top">
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+
+                        <h1 class="text-huge-title">
+                            Nice try, <br>
+                            chech out <a href="{{ url_for('bot') }}">Margaret</a> instead.<br>
+                        </h1>
+                    </div>
+
+                    <ul class="intro-social">
+                        <li><a href="https://www.twitter.com/annilltimothy" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/annilltimothy" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.github.com/annilltimothy" target="_blank">Github</a></li>
+                    </ul>
+
+                </div> <!-- end intro content -->
+
+            </section> <!-- end s-intro -->
+        </main>
+    </div>
+
+        <!-- Java Script
+    ================================================== -->
+    <script src="{{ url_for('static', filename = 'js/plugins.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+</body>
+{% endif %}
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Margaret</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/vendor.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css')}}">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename = 'apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename = 'favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename = 'favicon-16x16.png')}}">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+    <section class="column" style="margin: 5% 10%;">
+        <h1>Hello, I'm Margaret. How can I help?</h1>
+
+        <div id="conversation">
+            {% for message in conversation %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+
+        <form action="/get_response" method="POST">
+            <input type="text" name="user_input" style="width: 50%;">
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</body>
+</html>

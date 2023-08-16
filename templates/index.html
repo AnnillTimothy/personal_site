@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Annill Timothy</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/vendor.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css')}}">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename = 'apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename = 'favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename = 'favicon-16x16.png')}}">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+{% if home == True %}
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="{{ url_for('home', home=True) }}">Annill.</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="{{ url_for('home', home=True) }}" class="home-link">Annill.</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#works" class="smoothscroll">Works</a></li>
+                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+                        <div class="text-pretitle with-line">
+                            Hello World
+                        </div>
+
+                        <h1 class="text-huge-title">
+                            I'm Annill, <br>
+                            a full stack developer<br>
+                             based in Cape Town.
+                        </h1>
+                    </div>
+
+                    <ul class="intro-social">
+                        <li><a href="https://www.twitter.com/annilltimothy" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/annilltimothy" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.github.com/annilltimothy" target="_blank">Github</a></li>
+                    </ul>
+
+                </div> <!-- end intro content -->
+
+                <a href="#about" class="intro-scrolldown smoothscroll">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+                </a>
+
+            </section> <!-- end s-intro -->
+
+
+            <!-- ### about
+            ================================================== -->
+            <section id="about" class="s-about target-section">
+
+
+                <div class="row about-info wide" data-animate-block>
+
+                    <div class="column lg-6 md-12 about-info__pic-block">
+                        <img src="{{ url_for('static', filename = 'images/about-photo.jpg') }}" 
+                             srcset="{{ url_for('static', filename = 'images/about-photo.jpg') }}" alt="" class="about-info__pic" data-animate-el>
+                    </div>
+
+                    <div class="column lg-6 md-12">
+                        <div class="about-info__text" >
+
+                            <h2 class="text-pretitle with-line" data-animate-el>
+                                About Me
+                            </h2>
+                            <p class="-getter" data-animate-el>
+                                My love for software in grounded in my obsession for business and commerce. 
+                                <br><br>
+                                In a society increasingly dependent on data, it fundamentally reshapes what we knew as value every century before.
+                                <br>
+                                A great product means nothing if it can't be scaled, and in an age driven by information and autonomy, software provides an all inclusive solution to better and bigger business.
+                                The more data, the more value. Saving credit card information to facilitate easier checkouts, targeted advertising from cached data to encite larger spending. It all made sense.
+                                <br><br>
+                                - and that is why I code.
+                                <br><br>
+                                I started to develop software because I loved business and finance and it's this unique distinction that sets me apart from every developer who's primary interest lies within writing code. 
+                                <br>
+                                I see the clients needs directly and I see it first, which allows me to relate with their core needs and desires.
+                                <br>
+                                While the average developer creates a website, I enjoy integrating the system that requires the website in the first place.
+                                <br>
+                                A good looking website and a great product is truly worthless if there's no underlying system in place to scale it. 
+                                With good software alone and SEO techniques, targeted advertising, calls to action, etc. most of these aspects can be achieved with minimal effort.
+                                <br><br>
+                                I'm a naturally curious and it enables me to learn quickly, so when a new technology comes along that makes a previous task easier, I'm all ears. 
+                                I enjoy the process of creating something sustainable and impactful, things that make sense and will last the test of time.
+                                <br>
+                                Things like choosing niche specific colour palletes and designing industry specific logos that form the foundation of every company's existence,
+                                and figuring out how to structure and set up company specific data structures to most effectively manage and utilise customer data really brings me solace. 
+                                <br>
+                                Connecting and integrating all of the intricate parts into one impressive software solution that make the entire business come together makes my world go round.
+                                <br>
+                                It's the thrill of seeing it all come together in production working as a singular system, exactly as I planned that keeps me wanting to do it again.
+                            </p>
+                            <a href="{{ url_for('static', filename = 'images/resume.pdf') }}" download class="btn btn--medium u-fullwidth" data-animate-el>Download Resume</a>
+
+                        </div>
+                    </div>
+                </div> <!-- about-info -->
+
+
+                <div class="row about-expertise" data-animate-block>
+                    <div class="column lg-12">
+
+                        <h2 class="text-pretitle" data-animate-el>My Expertise</h2>
+
+                        <ul class="skills-list h1" data-animate-el>
+                            <li>Software Development</li>
+                            <li>Web Design</li>
+                            <li>Branding</li>
+                            <li>Digital Marketing</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Blockchain</li>
+                        </ul>
+
+                    </div>
+                </div> <!-- end about-expertise -->
+
+
+                <div class="row about-timelines" data-animate-block>
+
+                    <div class="column lg-6 tab-12">
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Technology Stack
+                        </h2>
+
+                        <div class="timeline" data-animate-el>
+                            
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Python</h4>
+                                </div>
+                            </div>
+  
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">HTML5</h4>
+                                </div>
+                            </div>
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">CSS3</h4>
+                                </div>
+                            </div>
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">SCSS/SASS</h4>
+                                </div>
+                            </div>
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">JavaScript</h4>
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+
+                    </div> <!-- end column -->
+
+                    <div class="column lg-6 tab-12">
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Expertise
+                        </h2>
+
+                        <div class="timeline" data-animate-el>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Django</h3>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Flask</h3>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Jinja</h3>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">chatGPT</h3>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">GSAP</h3>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Bootstrap</h3>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Linux</h3>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">AWS</h3>
+                                </div>
+                            </div>
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Docker</h3>
+                                </div>
+                            </div>
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Git</h3>
+                                </div>
+                            </div>    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">GIMP</h3>
+                                </div>
+                            </div>                            
+                            
+    
+                        </div> <!-- end timeline -->
+                        
+                    </div> <!-- end column -->
+
+
+                </div> <!-- end about-timelines -->
+
+            </section> <!-- end s-about -->
+
+
+            <!-- ### works
+            ================================================== -->
+            <section id="works" class="s-works target-section">
+
+
+                <div class="row works-portfolio">
+
+                    <div class="column lg-12" data-animate-block>
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Recent Works
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            These are some of the coolest projects I have worked on.
+                        </p>
+    
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-01">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{{ url_for('static', filename = 'images/portfolio/fuji.jpg') }}"
+                                             srcset="{{ url_for('static', filename = 'images/portfolio/fuji.jpg') }}"  alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Nova Capital Holdings.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-02">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{{ url_for('static', filename = 'images/portfolio/lamp.jpg') }}" 
+                                             srcset="{{ url_for('static', filename = 'images/portfolio/lamp.jpg') }}" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Software Development
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Cyberprop.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-03">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{{ url_for('static', filename = 'images/portfolio/rucksack.jpg') }}" 
+                                             srcset="{{ url_for('static', filename = 'images/portfolio/rucksack.jpg') }}" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Metasoft.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-04">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{{ url_for('static', filename = 'images/portfolio/skaterboy.jpg') }}"
+                                             srcset="{{ url_for('static', filename = 'images/portfolio/skaterboy.jpg') }}" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Boland Mental Health.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-05">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{{ url_for('static', filename = 'images/portfolio/sanddunes.jpg') }}" 
+                                             srcset="{{ url_for('static', filename = 'images/portfolio/sanddunes.jpg') }}" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website and Branding
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Buffalotech.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-06">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{{ url_for('static', filename = 'images/portfolio/selenium.jpg') }}" 
+                                             srcset="{{ url_for('static', filename = 'images/portfolio/selenium.jpg') }}" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Automated Twitter Bot
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Selenium.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-07">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{{ url_for('static', filename = 'images/portfolio/esti.jpg') }}" 
+                                             srcset="{{ url_for('static', filename = 'images/portfolio/esti.jpg') }}" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            website and Branding
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Esti Swartz.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-08">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{{ url_for('static', filename = 'images/portfolio/africa.jpg') }}" 
+                                             srcset="{{ url_for('static', filename = 'images/portfolio/africa.jpg') }}" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Roamify GPT.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-09">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{{ url_for('static', filename = 'images/portfolio/chatgpt.jpg') }}" 
+                                             srcset="{{ url_for('static', filename = 'images/portfolio/chatgpt.jpg') }}" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            NLP chat bot
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Margaret.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                        </ul> <!-- end folio-list -->
+
+                    </div> <!-- end column -->
+
+
+                    <!-- Modal Templates Popup
+                    -------------------------------------------- -->
+                    <div id="modal-01" hidden>
+                        <div class="modal-popup">
+                            <img src="{{ url_for('static', filename = 'images/portfolio/gallery/g-fuji.png') }}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Nova Capital Holdings</h5>
+                                <p>Nova Capital Holdings is an independent, diversified investment holdings company based in South Africa.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Branding</li>
+                                    <li>web Design</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://www.novacapitalholdings.com/" target="_blank" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-02" hidden>
+                        <div class="modal-popup">
+                            <img src="{{ url_for('static', filename = 'images/portfolio/gallery/g-lamp.png') }}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Cyberprop</h5>
+                                <p>Cyberprop attempts to eradicate the need for a professional property manager by offering investors the opportunity to manage their own properties via their devices as if they were stocks. 
+                                    Cyberprop seeks to automate everything from advertising, payments, accounts and invoicing to monthly reporting and even maintenance requests and responses.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Branding</li>
+                                    <li>Software Development</li>
+                                </ul>
+                            </div>
+                
+                            <a href="http://cyberprop.africa/" target="_blank" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-03" hidden>
+                        <div class="modal-popup">
+                            <img src="{{ url_for('static', filename = 'images/portfolio/gallery/g-rucksack.png') }}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Metasoft</h5>
+                                <p>Metasoft is a software development and digital marketing agency with a hightened focus on developing technologies integrated within the web3 webspace.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Website</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://www.metasoft.co.za/" target="_blank" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-04" hidden>
+                        <div class="modal-popup">
+                            <img src="{{ url_for('static', filename = 'images/portfolio/gallery/g-skaterboy.png') }}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Boland Mental Health</h5>
+                                <p>Boland Mental Health is a psychiatric medical practice located in Paarl Medi-Clinic.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Website</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://www.bolandmentalhealth.co.za/" target="_blank" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-05" hidden>
+                        <div class="modal-popup">
+
+                            <img src="{{ url_for('static', filename = 'images/portfolio/gallery/g-sanddunes.jpg') }}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Buffalotech</h5>
+                                <p>Buffalotech is a software development and branding agency that focuses on providing digital and web development services to businesses located in Sheridan, Wyoming USA.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Website</li>
+                                    <li>Branding</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://www.buffalotech.online/" target="_blank" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-06" hidden>
+                        <div class="modal-popup">
+                            <img src="{{ url_for('static', filename = 'images/portfolio/gallery/g-selenium.png') }}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Selenium</h5>
+                                <p>This is a Selenium test I wrote which will log in to Twitter and automatically like posts related to the topic inserted.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Bot</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://www.github.com/annilltimothy" target="_blank" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-07" hidden>
+                        <div class="modal-popup">
+                            <img src="{{ url_for('static', filename = 'images/portfolio/gallery/g-esti.png') }}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Esti Swartz</h5>
+                                <p>Custom designed website and branding for a psychologist practice located in Paarl.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Website</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://estiswartz.co.za" target="_blank" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-08" hidden>
+                        <div class="modal-popup">
+                            <img src="{{ url_for('static', filename = 'images/portfolio/gallery/g-africa.png') }}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Roamify GPT</h5>
+                                <p>This website was created in less than 20 minutes using an HTML template and chatGPT to generate all of the contect, including the company name. 
+                                    I developed it simply to test how much development can be sped up by using chat GPT to take over all of the 
+                                    thought processes and research involved in creating niche specific content.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Website</li>
+                                </ul>
+                            </div>
+                
+                            <a href="http://roamify.online" target="_blank" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-09" hidden>
+                        <div class="modal-popup">
+                            <img src="{{ url_for('static', filename = 'images/portfolio/gallery/g-gpt.jpg') }}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Margaret</h5>
+                                <p>Margaret uses the latest technology in Natural Language Processesing to conversate with users. I built this by promting chatGPT to provide me with a front-end interface for chatGPT, built with Flask. 
+                                    In intelligent terms, I essentially told it to build another version of itself using it's own API, in the frameworks I specified.
+                                    While chatGPT can obviously not write fully funtional code, yet, it did quite well with providing the foundation of a simple web interface (identical to chatGPT API documents) which I completed and ended up calling Margaret. 
+                                    </p>
+                                <ul class="modal-popup__cat">
+                                    <li>Website</li>
+                                </ul>
+                            </div>
+                
+                            <a href="{{ url_for('bot') }}" class="modal-popup__details">Project link</a> <!-- Check here for issues -->
+                        </div>
+                    </div> <!-- end modal -->
+
+                </div> <!-- end works-portfolio -->
+
+            </section> <!-- end s-works -->
+
+
+            <!-- ### contact
+            ================================================== -->
+            <section id="contact" class="s-contact target-section">
+
+                <div class="row contact-top">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle">
+                            Get In Touch
+                        </h2>
+
+                        <p class="h1">
+                            I would love to hear from you. If you have any questions or if you are interested in seeing more of my work or you just 
+                            want to chat about design, tech & art — drop me a message.
+                        </p>
+                    </div>
+                </div> <!-- end contact-top -->
+
+                <div class="row contact-bottom">
+                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Reach me at</h3>
+                        <p class="contact-links">
+                            <a href="mailto:annilltimothy@gmail.com" class="mailtoui">annilltimothy@gmail.com</a> <br>
+                            <a href="tel:+27715084518">+27 71 508 4518</a>
+                        </p>
+                    </div>
+                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Social</h3>
+                        <ul class="contact-social">
+                            <li><a href="https://www.twitter.com/annilltimothy" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/annilltimothy" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.github.com/annilltimothy" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="column lg-4 md-12 contact-block">
+                        <a href="mailto:annilltimothy@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hi.</a>
+                    </div>
+                </div> <!-- end contact-bottom -->
+
+            </section> <!-- end contact -->
+
+        </main> <!-- end s-content -->
+
+
+        <!-- ## footer
+        ================================================== -->
+        <footer class="s-footer">
+
+            <div class="row">
+                <div class="column ss-copyright">
+                    <span>© Copyright Annill 2023</span> 
+                    <span>By <a href="https://www.annilltimothy.com/">Annill Timothy</a></span>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{{ url_for('static', filename = 'js/plugins.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+
+</body>
+{% endif %}
+
+{% if home == False %}
+<body id="top">
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+                        <div class="text-pretitle with-line">
+                            Say the magic words
+                        </div>
+                        <form action="/files" method="POST">
+                                <input type="text" name="page_input" placeholder="Password" style="width: 50%;">
+                                <input type="submit" value="Enter">
+                        </form>
+                    </div>
+
+                    <ul class="intro-social">
+                        <li><a href="https://www.twitter.com/annilltimothy" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/annilltimothy" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.github.com/annilltimothy" target="_blank">Github</a></li>
+                    </ul>
+
+                </div> <!-- end intro content -->
+
+            </section> <!-- end s-intro -->
+        </main>
+    </div>
+
+        <!-- Java Script
+    ================================================== -->
+    <script src="{{ url_for('static', filename = 'js/plugins.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+</body>
+{% endif %}
+</html>
